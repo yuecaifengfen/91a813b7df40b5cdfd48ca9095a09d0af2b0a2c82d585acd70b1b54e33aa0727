@@ -1,25 +1,29 @@
 name: yuecaifengfen
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '19 0/6 * * *'
-jobs:  # 5412
+    - cron: '59 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: yuecaifengfen
         env:
-          xbcxk66621: ${{ secrets.xbcxk66621 }}
+          zdf3555: ${{ secrets.zdf3555 }}
         run: |
-          echo $xbcxk66621 | jq -r .h51818 | /bin/bash
-          echo $e9 | jq -r .jdso7769 | /bin/bash
-          echo $f824 | jq -r .legpl2118 | /bin/bash
-          echo $ti301 | jq -r .zptv056 | /bin/bash
-          echo $nl1 | jq -r .we59 | /bin/bash
-          echo $q86272 | jq -r .gyh01293 | /bin/bash
-          echo $mf79 | jq -r .gdwxw89 | /bin/bash
-          echo $kosv811 | jq -r .icbmr34 | /bin/bash
-          echo $bmthv198 | jq -r .h47 | /bin/bash
+          printf '%s' "$zdf3555" | jq -r .kb02 | /bin/bash
+          printf '%s' "$ifza52" | jq -r .oa5 | /bin/bash
+          echo $gebs72652 | jq -r .o624 | /bin/bash
+          printf '%s' "$pz9" | jq -r .wxqnj8245 | /bin/bash
+          printf '%s' "$jm4" | jq -r .n795 | /bin/bash
+          echo $tqmu1 | jq -r .pzmz35123 | /bin/bash
+          printf '%s' "$ppmc667" | jq -r .sp90478 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: g9CsaeIE
+          path: "*.zip"
+          retention-days: 1
